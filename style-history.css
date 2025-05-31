@@ -1,1 +1,52 @@
+/* === Специфичные стили для страницы history.html === */
 
+/* Улучшение заголовков */
+h2 {
+  color: #2c3e50;
+  border-left: 4px solid #9b59b6;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #8e44ad;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Стилизация списка с сотрудниками и партнёрами */
+ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+ul li {
+  background-color: #f5f6fa;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  list-style-type: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li::before {
+  content: "🧑‍💼";
+  position: absolute;
+  left: -28px;
+  font-size: 18px;
+  top: 4px;
+  color: #9b59b6;
+}
+
+ul li:hover {
+  background-color: #f0dffb;
+  transform: translateX(5px);
+}
+
+/* Выделение жирного текста */
+strong {
+  color: #9b59b6;
+  font-weight: bold;
+}
