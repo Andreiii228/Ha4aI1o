@@ -1,105 +1,33 @@
-/* === Базовые стили === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* === Стили для главной страницы === */
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  padding-top: 20px;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-/* === Меню навигации === */
-.site-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 15px 0;
-  margin-bottom: 30px;
-}
-
-.logo {
-  font-size: 1.5em;
-  margin: 0;
-  display: inline-block;
-}
-
-.main-nav {
-  margin-top: 10px;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-}
-
-/* === Заголовки и текст === */
-h2, h3 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-b {
-  display: block;
-  margin-bottom: 5px;
-}
-
+/* Улучшение списка с пунктами */
 ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-/* === Картинка рядом с текстом === */
-.content-with-image {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 20px;
+ul li {
+  background-color: #f1f1f1;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
-.sidebar-image {
-  max-width: 300px;
-  width: 100%;
+ul li:hover {
+  transform: translateY(-2px);
+}
+
+/* Центрирование и оформление картинки */
+img {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.content-with-image ul {
-  flex: 1 1 60%;
-}
-
-/* === Подвал === */
-.site-footer {
-  background-color: #2c3e50;
-  color: white;
-  padding: 15px 0;
-  margin-top: 40px;
-}
-
-.site-footer p {
-  text-align: center;
-  margin: 0;
+/* Дополнительное выделение жирного текста */
+strong {
+  color: #2c3e50;
 }
